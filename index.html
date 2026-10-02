@@ -84,10 +84,12 @@
                 </a>
 
                 <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center gap-8 font-medium">
+                <nav class="hidden md:flex items-center gap-6 lg:gap-8 font-medium">
                     <a href="#home" class="hover:text-brand-amber transition-colors">Home</a>
+                    <a href="#about" class="hover:text-brand-amber transition-colors">About</a>
                     <a href="#services" class="hover:text-brand-amber transition-colors">Services</a>
                     <a href="#reviews" class="hover:text-brand-amber transition-colors">Reviews</a>
+                    <a href="#faq" class="hover:text-brand-amber transition-colors">FAQ</a>
                     <a href="#contact" class="hover:text-brand-amber transition-colors">Contact</a>
                 </nav>
 
@@ -104,20 +106,22 @@
                     </div>
                     
                     <!-- Mobile Menu Button -->
-                    <button class="md:hidden p-2 text-white hover:text-brand-amber transition-colors" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <button class="md:hidden p-2 text-white hover:text-brand-amber transition-colors" onclick="toggleMobileMenu()">
                         <i data-lucide="menu" class="w-6 h-6"></i>
                     </button>
                 </div>
             </div>
         </div>
         
-        <!-- Mobile Navigation Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-brand-slate border-t border-brand-navy">
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden bg-brand-slate border-t border-brand-navy overflow-hidden transition-all duration-300 max-h-0">
             <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
-                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
-                <a href="#reviews" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Reviews</a>
-                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">About Us</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Services</a>
+                <a href="#reviews" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Reviews</a>
+                <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">FAQ</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Contact</a>
             </div>
         </div>
     </header>
@@ -178,6 +182,47 @@
                 <i data-lucide="hard-hat" class="w-10 h-10 text-brand-amber mb-3"></i>
                 <h4 class="text-lg font-bold">Confined Space Certified</h4>
                 <p class="text-sm text-gray-400 mt-2">Fully licensed operatives for deep manhole chambers and safe access.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 bg-brand-amber/10 text-brand-amberHover px-4 py-2 rounded-full text-sm font-bold">
+                    <i data-lucide="info" class="w-4 h-4"></i>
+                    About Reline-Drains
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">Your Local Drainage Experts in Rochdale</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Led by David Kershaw, Reline-Drains has been serving Greater Manchester for over 15 years. We pride ourselves on delivering honest, rapid, and high-quality drainage solutions without the hidden fees.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    From unblocking stubborn residential drains to advanced trenchless relining for commercial properties, we bring top-tier equipment and a commitment to keeping our community's infrastructure flowing smoothly.
+                </p>
+                <div class="pt-4 grid grid-cols-2 gap-6">
+                    <div class="border-l-4 border-brand-amber pl-4">
+                        <p class="text-3xl font-extrabold text-brand-navy">15+</p>
+                        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Years Experience</p>
+                    </div>
+                    <div class="border-l-4 border-brand-blue pl-4">
+                        <p class="text-3xl font-extrabold text-brand-navy">24/7</p>
+                        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Emergency Response</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80" alt="Drainage expert at work" class="rounded-2xl shadow-2xl object-cover h-96 w-full">
+                <div class="absolute -bottom-6 -left-6 bg-brand-navy text-white p-6 rounded-2xl shadow-xl hidden sm:block">
+                    <div class="flex items-center gap-4">
+                        <i data-lucide="award" class="w-10 h-10 text-brand-amber"></i>
+                        <div>
+                            <p class="font-bold text-lg">Fully Certified</p>
+                            <p class="text-sm text-gray-400">SafeContractor Approved</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -376,6 +421,67 @@
         </div>
     </section>
 
+    <!-- FAQ Accordion Section -->
+    <section id="faq" class="py-20 px-4 bg-white border-b border-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600">Quick answers to common questions about our drainage services.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-gray-50">
+                    <button class="w-full px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 transition-colors text-left" onclick="toggleFaq(1)">
+                        <span class="font-bold text-brand-navy text-lg">Do you charge a call-out fee?</span>
+                        <i data-lucide="chevron-down" id="faq-icon-1" class="w-5 h-5 text-brand-amber transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-1" class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 text-gray-600 border-t border-gray-100">
+                            No, we never charge a call-out fee. We offer free call-outs and free expert advice. You only pay for the work we do.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-gray-50">
+                    <button class="w-full px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 transition-colors text-left" onclick="toggleFaq(2)">
+                        <span class="font-bold text-brand-navy text-lg">How quickly can you respond?</span>
+                        <i data-lucide="chevron-down" id="faq-icon-2" class="w-5 h-5 text-brand-amber transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-2" class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 text-gray-600 border-t border-gray-100">
+                            We pride ourselves on our rapid response. Across Greater Manchester and Rochdale, we aim to be with you in under 1 hour for emergencies.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-gray-50">
+                    <button class="w-full px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 transition-colors text-left" onclick="toggleFaq(3)">
+                        <span class="font-bold text-brand-navy text-lg">What is trenchless pipe relining?</span>
+                        <i data-lucide="chevron-down" id="faq-icon-3" class="w-5 h-5 text-brand-amber transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-3" class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 text-gray-600 border-t border-gray-100">
+                            Trenchless relining is an advanced, no-dig method of repairing cracked or broken pipes. We insert a special resin-coated sleeve inside the damaged pipe, which cures to create a tough, seamless new pipe within the old one—saving your driveway or garden from being dug up.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-gray-50">
+                    <button class="w-full px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 transition-colors text-left" onclick="toggleFaq(4)">
+                        <span class="font-bold text-brand-navy text-lg">Are you equipped for commercial jobs?</span>
+                        <i data-lucide="chevron-down" id="faq-icon-4" class="w-5 h-5 text-brand-amber transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-4" class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 text-gray-600 border-t border-gray-100">
+                            Absolutely. We are fully insured and certified, including confined space entry certification, allowing us to safely manage complex commercial infrastructure and deep manhole work.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact & Quote Form Section -->
     <section id="contact" class="py-20 px-4 bg-gray-50">
         <div class="max-w-7xl mx-auto">
@@ -532,9 +638,36 @@
         </a>
     </div>
 
-    <!-- Initialize Icons -->
+    <!-- Initialize Icons and Scripts -->
     <script>
         lucide.createIcons();
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('max-h-0')) {
+                menu.classList.remove('max-h-0');
+                menu.classList.add('max-h-[30rem]'); 
+            } else {
+                menu.classList.remove('max-h-[30rem]');
+                menu.classList.add('max-h-0');
+            }
+        }
+
+        // FAQ Toggle
+        function toggleFaq(id) {
+            const answer = document.getElementById('faq-' + id);
+            const icon = document.getElementById('faq-icon-' + id);
+            if (answer.classList.contains('max-h-0')) {
+                answer.classList.remove('max-h-0');
+                answer.classList.add('max-h-40'); 
+                icon.classList.add('rotate-180');
+            } else {
+                answer.classList.remove('max-h-40');
+                answer.classList.add('max-h-0');
+                icon.classList.remove('rotate-180');
+            }
+        }
     </script>
 </body>
 </html>
