@@ -9,48 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            navy: '#0f172a',
-                            slate: '#1e293b',
-                            blue: '#2563eb',
-                            blueLight: '#0284c7',
-                            amber: '#f59e0b',
-                            amberHover: '#d97706',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Lucide Icons -->
+    <link href="/src/style.css" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        html { scroll-behavior: smooth; }
-        .hero-bg {
-            background-image: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-        .pulse-amber {
-            box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
-            animation: pulse-ring 2s infinite;
-        }
-        @keyframes pulse-ring {
-            0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
-            70% { box-shadow: 0 0 0 15px rgba(245, 158, 11, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
-        }
-    </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans antialiased pb-28 sm:pb-0">
 
@@ -241,7 +201,7 @@
                     <div class="bg-brand-blue/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="waves" class="w-8 h-8 text-brand-blue"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-brand-navy mb-4">Unblocking & Cleaning</h3>
+                    <a href="/unblocking.html"><h3 class="text-2xl font-bold text-brand-navy mb-4 hover:text-brand-amber transition-colors">Unblocking & Cleaning <i data-lucide="arrow-right" class="inline w-5 h-5"></i></h3></a>
                     <ul class="space-y-3 text-gray-600 font-medium">
                         <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0 mt-0.5"></i> High pressure water jetting for sewers</li>
                         <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0 mt-0.5"></i> Drain, sink & gutter unblocking</li>
@@ -256,7 +216,7 @@
                     <div class="bg-brand-amber/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="git-commit-vertical" class="w-8 h-8 text-brand-amberHover"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-brand-navy mb-4">Trenchless Relining & Repairs</h3>
+                    <a href="/relining.html"><h3 class="text-2xl font-bold text-brand-navy mb-4 hover:text-brand-amber transition-colors">Trenchless Relining & Repairs <i data-lucide="arrow-right" class="inline w-5 h-5"></i></h3></a>
                     <ul class="space-y-3 text-gray-600 font-medium">
                         <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-amberHover shrink-0 mt-0.5"></i> Cost-effective no-dig pipe & drain relining</li>
                         <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-amberHover shrink-0 mt-0.5"></i> Structural repairs for cracked & collapsed pipes</li>
@@ -270,7 +230,7 @@
                     <div class="bg-brand-blue/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="cctv" class="w-8 h-8 text-brand-blue"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-brand-navy mb-4">CCTV & Drone Inspections</h3>
+                    <a href="/cctv-surveys.html"><h3 class="text-2xl font-bold text-brand-navy mb-4 hover:text-brand-amber transition-colors">CCTV & Drone Inspections <i data-lucide="arrow-right" class="inline w-5 h-5"></i></h3></a>
                     <ul class="space-y-3 text-gray-600 font-medium">
                         <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0 mt-0.5"></i> Full CCTV drainage surveys with detailed reports</li>
                         <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0 mt-0.5"></i> Hi-Tech drone roof inspections (No scaffolding)</li>
@@ -284,7 +244,7 @@
                     <div class="bg-brand-blue/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="wrench" class="w-8 h-8 text-brand-blue"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-brand-navy mb-4">Infrastructure & Groundworks</h3>
+                    <a href="/groundworks.html"><h3 class="text-2xl font-bold text-brand-navy mb-4 hover:text-brand-amber transition-colors">Infrastructure & Groundworks <i data-lucide="arrow-right" class="inline w-5 h-5"></i></h3></a>
                     <ul class="space-y-3 text-gray-600 font-medium">
                         <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0 mt-0.5"></i> Drainage system design & new installations</li>
                         <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0 mt-0.5"></i> Comprehensive septic tank installations</li>
