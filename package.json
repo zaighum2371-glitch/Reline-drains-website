@@ -1,6 +1,7 @@
 {
   "name": "reline-drains-website",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -26,5 +27,8 @@
     "postcss": "^8.5.28",
     "tailwindcss": "^4.3.3",
     "vite": "^8.3.2"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
   }
 }
