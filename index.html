@@ -60,7 +60,7 @@
                         <a href="tel:07474141343" class="group flex items-center gap-3 bg-brand-amber hover:bg-brand-amberHover text-brand-navy font-bold py-2 px-5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg pulse-amber">
                             <i data-lucide="phone-call" class="w-5 h-5 group-hover:rotate-12 transition-transform"></i>
                             <span class="flex flex-col text-left leading-tight">
-                                <span class="text-[10px] font-semibold uppercase tracking-wider opacity-80">Call 24/7</span>
+                                <span class="text-[10px] font-semibold uppercase tracking-wider opacity-80">Call Us</span>
                                 <span class="text-base">0747 414 1343</span>
                             </span>
                         </a>
@@ -111,7 +111,7 @@
                     </a>
                 </div>
                 <div class="flex items-center justify-center sm:justify-start gap-4 text-sm text-gray-300 font-semibold pt-2 flex-wrap">
-                    <span class="flex items-center gap-1"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-400"></i> No Call-Out Fee</span>
+                    <span class="flex items-center gap-1"><i data-lucide="info" class="w-4 h-4 text-brand-amber"></i> Out of Hours Charges Apply</span>
                     <span class="flex items-center gap-1"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-400"></i> Free Expert Advice</span>
                     <span class="flex items-center gap-1"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-400"></i> Domestic & Commercial</span>
                 </div>
@@ -258,9 +258,16 @@
     </section>
 
     <!-- Customer Reviews Section -->
-    <section id="reviews" class="py-20 px-4 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16 space-y-4">
+    <section id="reviews" class="py-20 bg-white overflow-hidden border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14 space-y-4">
+                <!-- 100% Satisfaction Rate Badge -->
+                <div class="inline-flex items-center gap-2.5 bg-green-50 border border-green-200 text-green-800 px-5 py-2 rounded-full font-bold text-sm sm:text-base shadow-sm">
+                    <span class="flex h-2.5 w-2.5 rounded-full bg-green-500 animate-pulse"></span>
+                    <i data-lucide="shield-check" class="w-5 h-5 text-green-600"></i>
+                    <span>100% Satisfaction Rate Guaranteed</span>
+                </div>
+
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">What Our Customers Say</h2>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">Don't just take our word for it. Read real reviews from satisfied customers across Greater Manchester.</p>
                 <div class="inline-flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold text-gray-700">
@@ -271,112 +278,288 @@
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </span>
-                    5.0 Average Rating
+                    5.0 Average Rating Across 100+ Jobs
                 </div>
             </div>
+        </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Review 1 -->
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex justify-between items-start mb-4">
+        <!-- Continuous Horizontally Scrolling Reviews Ticker -->
+        <div class="relative w-full overflow-hidden py-4">
+            <!-- Subtle edge gradient masks for a smooth fade effect -->
+            <div class="absolute left-0 top-0 bottom-0 w-12 sm:w-28 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-12 sm:w-28 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+            <div class="animate-marquee gap-6">
+                <!-- Track 1 of Reviews -->
+                <div class="flex gap-6 shrink-0">
+                    <!-- Review 1 -->
+                    <div class="w-[320px] sm:w-[380px] bg-gray-50 rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between shrink-0">
                         <div>
-                            <h4 class="font-bold text-brand-navy">Imran Jameel</h4>
-                            <p class="text-xs text-gray-500 mt-1">7 months ago</p>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-bold text-brand-navy">Imran Jameel</h4>
+                                    <p class="text-xs text-gray-500 mt-0.5">7 months ago</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">"Would highly recommend this company. David was very professional and polite aswell as reliable in terms of the service he provides. He was very punctual and arrived at around the expected time."</p>
                         </div>
-                        <div class="flex text-yellow-400">
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center gap-1.5 text-xs text-green-700 font-semibold">
+                            <i data-lucide="badge-check" class="w-4 h-4 text-green-600"></i> Verified Customer
                         </div>
                     </div>
-                    <p class="text-gray-600 text-sm leading-relaxed">"Would highly recommend this company. David was very professional and polite aswell as reliable in terms of the service he provides. He was very punctual and arrived at around the expected time, so everything was communicated well. Would definitely use his service again if needed."</p>
+                    <!-- Review 2 -->
+                    <div class="w-[320px] sm:w-[380px] bg-gray-50 rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between shrink-0">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-bold text-brand-navy">Nigel Boyd</h4>
+                                    <p class="text-xs text-gray-500 mt-0.5">2 years ago</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">"Absolutely brilliant service! Arrived at exactly the time he stated. Dealt with the problem really quickly and efficiently, and his invoice was very reasonable. Lovely friendly guy. Thanks so much."</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center gap-1.5 text-xs text-green-700 font-semibold">
+                            <i data-lucide="badge-check" class="w-4 h-4 text-green-600"></i> Verified Customer
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="w-[320px] sm:w-[380px] bg-gray-50 rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between shrink-0">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-bold text-brand-navy">Sue Hopkins</h4>
+                                    <p class="text-xs text-gray-500 mt-0.5">3 years ago</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">"I just can not thank David Kershaw enough. He quickly identified my drainage problem and worked in a very tidy and organised manner. Very professional from start to finish. Excellent!"</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center gap-1.5 text-xs text-green-700 font-semibold">
+                            <i data-lucide="badge-check" class="w-4 h-4 text-green-600"></i> Verified Customer
+                        </div>
+                    </div>
+                    <!-- Review 4 -->
+                    <div class="w-[320px] sm:w-[380px] bg-gray-50 rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between shrink-0">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-bold text-brand-navy">Denise Dawson</h4>
+                                    <p class="text-xs text-gray-500 mt-0.5">4 days ago</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">"David did amazing job. Explained exactly what was needed and was upfront about the cost. Couldn't be happier, highly recommended."</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center gap-1.5 text-xs text-green-700 font-semibold">
+                            <i data-lucide="badge-check" class="w-4 h-4 text-green-600"></i> Verified Customer
+                        </div>
+                    </div>
+                    <!-- Review 5 -->
+                    <div class="w-[320px] sm:w-[380px] bg-gray-50 rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between shrink-0">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-bold text-brand-navy">Usman Mohammed</h4>
+                                    <p class="text-xs text-gray-500 mt-0.5">a week ago</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">"Dave was at my neighbour's sorting out their drains, so I asked if he could look at mine too. Got it sorted there and then for a really reasonable price. Friendly, helpful and did a great job."</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center gap-1.5 text-xs text-green-700 font-semibold">
+                            <i data-lucide="badge-check" class="w-4 h-4 text-green-600"></i> Verified Customer
+                        </div>
+                    </div>
+                    <!-- Review 6 -->
+                    <div class="w-[320px] sm:w-[380px] bg-gray-50 rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between shrink-0">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-bold text-brand-navy">Emma Horne</h4>
+                                    <p class="text-xs text-gray-500 mt-0.5">2 weeks ago</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">"Dave was fantastic, polite, thorough and very knowledgeable. Highly recommended."</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center gap-1.5 text-xs text-green-700 font-semibold">
+                            <i data-lucide="badge-check" class="w-4 h-4 text-green-600"></i> Verified Customer
+                        </div>
+                    </div>
                 </div>
-                <!-- Review 2 -->
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex justify-between items-start mb-4">
+
+                <!-- Track 2 (Duplicate for Seamless Infinite Marquee Loop) -->
+                <div class="flex gap-6 shrink-0" aria-hidden="true">
+                    <!-- Review 1 -->
+                    <div class="w-[320px] sm:w-[380px] bg-gray-50 rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between shrink-0">
                         <div>
-                            <h4 class="font-bold text-brand-navy">Nigel Boyd</h4>
-                            <p class="text-xs text-gray-500 mt-1">2 years ago</p>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-bold text-brand-navy">Imran Jameel</h4>
+                                    <p class="text-xs text-gray-500 mt-0.5">7 months ago</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">"Would highly recommend this company. David was very professional and polite aswell as reliable in terms of the service he provides. He was very punctual and arrived at around the expected time."</p>
                         </div>
-                        <div class="flex text-yellow-400">
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center gap-1.5 text-xs text-green-700 font-semibold">
+                            <i data-lucide="badge-check" class="w-4 h-4 text-green-600"></i> Verified Customer
                         </div>
                     </div>
-                    <p class="text-gray-600 text-sm leading-relaxed">"Absolutely brilliant service! Arrived at exactly the time he stated. Dealt with the problem really quickly and efficiently, and his invoice was very reasonable. On top of that a really lovely friendly guy. Thanks so much."</p>
-                </div>
-                <!-- Review 3 -->
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex justify-between items-start mb-4">
+                    <!-- Review 2 -->
+                    <div class="w-[320px] sm:w-[380px] bg-gray-50 rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between shrink-0">
                         <div>
-                            <h4 class="font-bold text-brand-navy">Sue Hopkins</h4>
-                            <p class="text-xs text-gray-500 mt-1">3 years ago</p>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-bold text-brand-navy">Nigel Boyd</h4>
+                                    <p class="text-xs text-gray-500 mt-0.5">2 years ago</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">"Absolutely brilliant service! Arrived at exactly the time he stated. Dealt with the problem really quickly and efficiently, and his invoice was very reasonable. Lovely friendly guy. Thanks so much."</p>
                         </div>
-                        <div class="flex text-yellow-400">
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center gap-1.5 text-xs text-green-700 font-semibold">
+                            <i data-lucide="badge-check" class="w-4 h-4 text-green-600"></i> Verified Customer
                         </div>
                     </div>
-                    <p class="text-gray-600 text-sm leading-relaxed">"I just can not thank David Kershaw enough. He quickly identified my drainage problem and worked so hard to correct it. He worked in a very tidy and organised manner and was very professional from start to finish. I would not hesitate to recommend this company. Excellent!"</p>
-                </div>
-                <!-- Review 4 -->
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex justify-between items-start mb-4">
+                    <!-- Review 3 -->
+                    <div class="w-[320px] sm:w-[380px] bg-gray-50 rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between shrink-0">
                         <div>
-                            <h4 class="font-bold text-brand-navy">Denise Dawson</h4>
-                            <p class="text-xs text-gray-500 mt-1">4 days ago</p>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-bold text-brand-navy">Sue Hopkins</h4>
+                                    <p class="text-xs text-gray-500 mt-0.5">3 years ago</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">"I just can not thank David Kershaw enough. He quickly identified my drainage problem and worked in a very tidy and organised manner. Very professional from start to finish. Excellent!"</p>
                         </div>
-                        <div class="flex text-yellow-400">
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center gap-1.5 text-xs text-green-700 font-semibold">
+                            <i data-lucide="badge-check" class="w-4 h-4 text-green-600"></i> Verified Customer
                         </div>
                     </div>
-                    <p class="text-gray-600 text-sm leading-relaxed">"David did amazing job. Explained exactly what was needed and was upfront about the cost. Couldn't be happier, highly recommended."</p>
-                </div>
-                <!-- Review 5 -->
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex justify-between items-start mb-4">
+                    <!-- Review 4 -->
+                    <div class="w-[320px] sm:w-[380px] bg-gray-50 rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between shrink-0">
                         <div>
-                            <h4 class="font-bold text-brand-navy">Usman Mohammed</h4>
-                            <p class="text-xs text-gray-500 mt-1">a week ago</p>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-bold text-brand-navy">Denise Dawson</h4>
+                                    <p class="text-xs text-gray-500 mt-0.5">4 days ago</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">"David did amazing job. Explained exactly what was needed and was upfront about the cost. Couldn't be happier, highly recommended."</p>
                         </div>
-                        <div class="flex text-yellow-400">
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center gap-1.5 text-xs text-green-700 font-semibold">
+                            <i data-lucide="badge-check" class="w-4 h-4 text-green-600"></i> Verified Customer
                         </div>
                     </div>
-                    <p class="text-gray-600 text-sm leading-relaxed">"Dave was at my neighbour's sorting out their drains, so I asked if he could have a quick look at a problem with mine too. He was more than happy to help and got it sorted there and then for a really reasonable price. Friendly, helpful and did a great job."</p>
-                </div>
-                <!-- Review 6 -->
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex justify-between items-start mb-4">
+                    <!-- Review 5 -->
+                    <div class="w-[320px] sm:w-[380px] bg-gray-50 rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between shrink-0">
                         <div>
-                            <h4 class="font-bold text-brand-navy">Emma Horne</h4>
-                            <p class="text-xs text-gray-500 mt-1">2 weeks ago</p>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-bold text-brand-navy">Usman Mohammed</h4>
+                                    <p class="text-xs text-gray-500 mt-0.5">a week ago</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">"Dave was at my neighbour's sorting out their drains, so I asked if he could look at mine too. Got it sorted there and then for a really reasonable price. Friendly, helpful and did a great job."</p>
                         </div>
-                        <div class="flex text-yellow-400">
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center gap-1.5 text-xs text-green-700 font-semibold">
+                            <i data-lucide="badge-check" class="w-4 h-4 text-green-600"></i> Verified Customer
                         </div>
                     </div>
-                    <p class="text-gray-600 text-sm leading-relaxed">"Dave was fantastic, polite, through and very knowledgeable. Highly recommended."</p>
+                    <!-- Review 6 -->
+                    <div class="w-[320px] sm:w-[380px] bg-gray-50 rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between shrink-0">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-bold text-brand-navy">Emma Horne</h4>
+                                    <p class="text-xs text-gray-500 mt-0.5">2 weeks ago</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">"Dave was fantastic, polite, thorough and very knowledgeable. Highly recommended."</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center gap-1.5 text-xs text-green-700 font-semibold">
+                            <i data-lucide="badge-check" class="w-4 h-4 text-green-600"></i> Verified Customer
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -394,12 +577,12 @@
                 <!-- FAQ 1 -->
                 <div class="border border-gray-200 rounded-xl overflow-hidden bg-gray-50">
                     <button class="w-full px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 transition-colors text-left" onclick="toggleFaq(1)">
-                        <span class="font-bold text-brand-navy text-lg">Do you charge a call-out fee?</span>
+                        <span class="font-bold text-brand-navy text-lg">What are your rates and call-out charges?</span>
                         <i data-lucide="chevron-down" id="faq-icon-1" class="w-5 h-5 text-brand-amber transition-transform duration-300"></i>
                     </button>
                     <div id="faq-1" class="max-h-0 overflow-hidden transition-all duration-300">
                         <div class="p-6 text-gray-600 border-t border-gray-100">
-                            No, we never charge a call-out fee. We offer free call-outs and free expert advice. You only pay for the work we do.
+                            We believe in 100% upfront, transparent pricing with no hidden surprises. We assess your drainage issue and provide a clear quote before starting any work. Please note that out of hours charges will apply for evening, weekend, and late-night emergency call-outs.
                         </div>
                     </div>
                 </div>
