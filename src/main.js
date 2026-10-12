@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       try {
         const formData = new FormData(form);
-        const actionUrl = form.getAttribute('action') || 'https://formspree.io/f/xblywzyo';
+        const actionUrl = form.getAttribute('action') || 'https://formsubmit.co/ajax/dave.kersh1234@gmail.com';
 
         const response = await fetch(actionUrl, {
           method: 'POST',
@@ -43,7 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
 
-        if (response.ok) {
+        const data = await response.json().catch(() => ({}));
+
+        if (response.ok && (data.success === true || data.success === 'true')) {
           form.reset();
           if (statusContainer) {
             statusContainer.className = 'form-status p-4 rounded-xl bg-green-50 border border-green-200 text-green-800 text-sm font-semibold flex items-center gap-2';
@@ -55,9 +57,20 @@ document.addEventListener('DOMContentLoaded', () => {
           } else {
             alert('Thank you! Your request has been sent to Dave.');
           }
+        } else if (data.message && data.message.includes('Activation')) {
+          form.reset();
+          if (statusContainer) {
+            statusContainer.className = 'form-status p-4 rounded-xl bg-blue-50 border border-blue-200 text-brand-navy text-sm font-semibold flex items-center gap-2';
+            statusContainer.innerHTML = `
+              <svg class="w-5 h-5 text-brand-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>Thank you! Form activation request has been sent to Dave's inbox (dave.kersh1234@gmail.com). Once activated, all requests go directly to his email.</span>
+            `;
+            statusContainer.classList.remove('hidden');
+          } else {
+            alert('Thank you! Form activation request sent.');
+          }
         } else {
-          const data = await response.json().catch(() => ({}));
-          const errorMsg = (data.errors && data.errors.map(err => err.message).join(', ')) || 'There was an issue sending your message. Please call us directly on 0747 414 1343.';
+          const errorMsg = data.message || (data.errors && data.errors.map(err => err.message).join(', ')) || 'There was an issue sending your message. Please call us directly on 0747 414 1343.';
           if (statusContainer) {
             statusContainer.className = 'form-status p-4 rounded-xl bg-red-50 border border-red-200 text-red-800 text-sm font-semibold flex items-center gap-2';
             statusContainer.innerHTML = `
