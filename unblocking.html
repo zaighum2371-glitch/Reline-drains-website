@@ -144,38 +144,40 @@
                     
                     <!-- Contact Form -->
                     <div class="lg:col-span-3 p-10 lg:p-12">
-                        <form class="space-y-6" onsubmit="event.preventDefault(); alert('Form submitted!');">
+                        <form class="contact-form space-y-6" action="https://formspree.io/f/xblywzyo" method="POST">
+                            <input type="hidden" name="_subject" value="New Lead from Reline Drains (Unblocking Page)">
+                            <div class="form-status hidden"></div>
+                            
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
-                                    <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-shadow bg-gray-50" placeholder="John Doe">
+                                    <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-shadow bg-gray-50" placeholder="John Doe">
                                 </div>
                                 <div>
                                     <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number *</label>
-                                    <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-shadow bg-gray-50" placeholder="07...">
+                                    <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-shadow bg-gray-50" placeholder="07...">
                                 </div>
                             </div>
                             
                             <div>
                                 <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address (Optional)</label>
-                                <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-shadow bg-gray-50" placeholder="john@example.com">
+                                <input type="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-shadow bg-gray-50" placeholder="john@example.com">
                             </div>
 
                             <div>
                                 <label class="block text-sm font-semibold text-gray-700 mb-2">Service Required *</label>
-                                <select required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-shadow bg-gray-50 text-gray-700">
-                                    <option value="" disabled selected>Select a service...</option>
-                                    <option value="unblocking">Emergency Unblocking</option>
-                                    <option value="relining">Pipe Relining & Repairs</option>
-                                    <option value="cctv">CCTV or Drone Inspection</option>
-                                    <option value="groundworks">Groundworks & Installation</option>
-                                    <option value="other">Other Inquiry</option>
+                                <select name="service" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-shadow bg-gray-50 text-gray-700">
+                                    <option value="Emergency Unblocking" selected>Emergency Unblocking</option>
+                                    <option value="Pipe Relining & Repairs">Pipe Relining & Repairs</option>
+                                    <option value="CCTV or Drone Inspection">CCTV or Drone Inspection</option>
+                                    <option value="Groundworks & Installation">Groundworks & Installation</option>
+                                    <option value="Other Inquiry">Other Inquiry</option>
                                 </select>
                             </div>
 
                             <div>
                                 <label class="block text-sm font-semibold text-gray-700 mb-2">Message / Details</label>
-                                <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-shadow bg-gray-50 resize-none" placeholder="Please describe your issue or project..."></textarea>
+                                <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-shadow bg-gray-50 resize-none" placeholder="Please describe your issue or project..."></textarea>
                             </div>
 
                             <button type="submit" class="w-full sm:w-auto px-8 py-4 bg-brand-blue hover:bg-brand-blueLight text-white font-bold rounded-lg transition-colors shadow-lg shadow-brand-blue/30 flex items-center justify-center gap-2">
