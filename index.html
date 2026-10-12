@@ -286,7 +286,11 @@
                             style="object-position: center 50%; transform: scale(1.08) translateX(1%);"
                             draggable="false"
                         />
-                        <span id="badge-after" class="absolute bottom-4 right-4 bg-emerald-600/95 text-white backdrop-blur-sm text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 z-10 pointer-events-none transition-opacity duration-200">
+                    </div>
+
+                    <!-- Clipper Container for AFTER Badge (Revealed only to the right of slider line) -->
+                    <div id="badge-after-clipper" class="absolute inset-0 w-full h-full pointer-events-none z-10 overflow-hidden" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
+                        <span id="badge-after" class="absolute bottom-4 right-4 bg-emerald-600/95 text-white backdrop-blur-sm text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 whitespace-nowrap">
                             <i data-lucide="check-circle-2" class="w-4 h-4"></i> AFTER: New Clay Channel Fitted
                         </span>
                     </div>
@@ -927,28 +931,15 @@
             const clamped = Math.max(0, Math.min(100, Number(percent)));
             sliderClipper.style.clipPath = `polygon(0 0, ${clamped}% 0, ${clamped}% 100%, 0 100%)`;
             sliderHandleLine.style.left = `${clamped}%`;
+
+            // Clip the AFTER badge container so as soon as the slider touches/crosses it, that portion disappears seamlessly
+            const badgeAfterClipper = document.getElementById('badge-after-clipper');
+            if (badgeAfterClipper) {
+                badgeAfterClipper.style.clipPath = `polygon(${clamped}% 0, 100% 0, 100% 100%, ${clamped}% 100%)`;
+            }
+
             if (sliderRange && sliderRange.value != clamped) {
                 sliderRange.value = clamped;
-            }
-
-            // Hide AFTER badge when slider reaches right side (showing 100% before)
-            if (badgeAfter) {
-                if (clamped >= 82) {
-                    badgeAfter.style.opacity = '0';
-                    badgeAfter.style.pointerEvents = 'none';
-                } else {
-                    badgeAfter.style.opacity = '1';
-                }
-            }
-
-            // Hide BEFORE badge when slider reaches left side (showing 100% after)
-            if (badgeBefore) {
-                if (clamped <= 18) {
-                    badgeBefore.style.opacity = '0';
-                    badgeBefore.style.pointerEvents = 'none';
-                } else {
-                    badgeBefore.style.opacity = '1';
-                }
             }
 
             // Update active state of preset buttons
