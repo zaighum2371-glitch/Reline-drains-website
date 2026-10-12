@@ -275,15 +275,15 @@
             <!-- Comparison Card Wrapper -->
             <div class="bg-white rounded-3xl p-4 sm:p-8 shadow-xl border border-gray-200/80 max-w-4xl mx-auto">
                 <!-- Interactive Comparison Slider Container -->
-                <div id="drain-comparison-slider" class="comparison-slider-container relative w-full aspect-[3/4] sm:aspect-[4/5] md:aspect-[1/1] max-h-[580px] rounded-2xl overflow-hidden shadow-inner bg-slate-900 border border-gray-200">
+                <div id="drain-comparison-slider" class="comparison-slider-container relative w-full aspect-[4/3] sm:aspect-[16/10] md:aspect-[16/9] max-h-[580px] rounded-2xl overflow-hidden shadow-inner bg-slate-900 border border-gray-200">
                     
-                    <!-- Underneath Image: AFTER (Aligned) -->
+                    <!-- Underneath Image: AFTER (Aligned Horizontally) -->
                     <div class="absolute inset-0 w-full h-full overflow-hidden">
                         <img 
                             src="/images/drain-after.jpg" 
                             alt="Drain restoration completed chamber benching and smooth relined flow channel"
                             class="w-full h-full object-cover select-none pointer-events-none"
-                            style="object-position: center 52%; transform: scale(1.08) translateY(1%);"
+                            style="object-position: center 50%; transform: scale(1.08) translateX(1%);"
                             draggable="false"
                         />
                         <span class="absolute bottom-4 right-4 bg-emerald-600/90 text-white backdrop-blur-sm text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 z-10 pointer-events-none">
@@ -291,13 +291,13 @@
                         </span>
                     </div>
 
-                    <!-- Top Clipped Image: BEFORE (Aligned) -->
+                    <!-- Top Clipped Image: BEFORE (Aligned Horizontally) -->
                     <div id="slider-before-clipper" class="absolute inset-0 w-full h-full overflow-hidden" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
                         <img 
                             src="/images/drain-before.jpg" 
                             alt="Damaged silted drainage chamber before unblocking and relining repairs"
                             class="w-full h-full object-cover select-none pointer-events-none"
-                            style="object-position: center 48%; transform: scale(1.0) translateY(-1%);"
+                            style="object-position: center 50%; transform: scale(1.0) translateX(-1%);"
                             draggable="false"
                         />
                         <span class="absolute bottom-4 left-4 bg-brand-navy/90 text-white backdrop-blur-sm text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 z-10 pointer-events-none">
