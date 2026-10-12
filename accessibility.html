@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Statement | Reline-Drains</title>
+    <meta name="description" content="Accessibility Statement for Reline-Drains. Our commitment to ensuring digital accessibility and inclusive customer service.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="/src/style.css" rel="stylesheet">
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased pb-28 sm:pb-0">
+
+    <!-- Notification Strip -->
+    <div class="bg-brand-blue text-white py-2 px-4 text-sm font-medium">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2 font-bold tracking-wide">
+                <span class="relative flex h-3 w-3">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                </span>
+                UNDER 1 HOUR RESPONSE THROUGHOUT GREATER MANCHESTER
+            </div>
+            <div class="flex items-center gap-2 bg-white/20 px-3 py-1 rounded-full text-xs">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+                15+ Years Experience
+            </div>
+        </div>
+    </div>
+
+    <!-- Brand Header -->
+    <header class="bg-brand-navy text-white sticky top-0 z-50 shadow-md border-b border-brand-slate">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="/index.html#home" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                    <div class="bg-brand-blue p-2 rounded-lg">
+                        <i data-lucide="droplet" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight">Reline-Drains</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-6 lg:gap-8 font-medium">
+                    <a href="/index.html#home" class="hover:text-brand-amber transition-colors">Home</a>
+                    <a href="/index.html#about" class="hover:text-brand-amber transition-colors">About</a>
+                    <a href="/index.html#services" class="hover:text-brand-amber transition-colors">Services</a>
+                    <a href="/index.html#gallery" class="hover:text-brand-amber transition-colors">Gallery</a>
+                    <a href="/index.html#reviews" class="hover:text-brand-amber transition-colors">Reviews</a>
+                    <a href="/index.html#faq" class="hover:text-brand-amber transition-colors">FAQ</a>
+                    <a href="/index.html#contact" class="hover:text-brand-amber transition-colors">Contact</a>
+                </nav>
+
+                <div class="flex items-center gap-4">
+                    <!-- Desktop CTA -->
+                    <div class="hidden sm:flex">
+                        <a href="tel:07474141343" class="group flex items-center gap-3 bg-brand-amber hover:bg-brand-amberHover text-brand-navy font-bold py-2 px-5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg pulse-amber">
+                            <i data-lucide="phone-call" class="w-5 h-5 group-hover:rotate-12 transition-transform"></i>
+                            <span class="flex flex-col text-left leading-tight">
+                                <span class="text-[10px] font-semibold uppercase tracking-wider opacity-80">Call Us</span>
+                                <span class="text-base">0747 414 1343</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- Instagram Button -->
+                    <a href="https://www.instagram.com/reline_drains?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center p-1.5 rounded-xl text-brand-amber hover:text-brand-amberHover hover:bg-brand-slate/60 transition-all duration-300 transform hover:scale-110" title="Follow us on Instagram" aria-label="Follow Reline-Drains on Instagram">
+                        <svg class="w-8 h-8 sm:w-9 sm:h-9 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 text-white hover:text-brand-amber transition-colors" onclick="toggleMobileMenu()">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden bg-brand-slate border-t border-brand-navy overflow-hidden transition-all duration-300 max-h-0">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="/index.html#home" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Home</a>
+                <a href="/index.html#about" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">About Us</a>
+                <a href="/index.html#services" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Services</a>
+                <a href="/index.html#gallery" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Gallery</a>
+                <a href="/index.html#reviews" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Reviews</a>
+                <a href="/index.html#faq" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">FAQ</a>
+                <a href="/index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Contact</a>
+                <a href="https://www.instagram.com/reline_drains?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3 py-2 rounded-md text-base font-medium text-brand-amber hover:text-brand-amberHover hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">
+                    <svg class="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                    Follow us on Instagram
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header Banner -->
+    <section class="bg-brand-navy text-white py-16 px-4 border-b border-brand-slate">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <span class="inline-flex items-center gap-2 bg-brand-blue/30 text-brand-amber px-4 py-1.5 rounded-full text-sm font-semibold border border-brand-blue/40">
+                <i data-lucide="eye" class="w-4 h-4"></i> Inclusive Access
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white">Accessibility Statement</h1>
+            <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto">
+                Our ongoing commitment to making drainage services and digital information accessible to everyone.
+            </p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <main class="py-16 px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-gray-100 space-y-10 text-gray-700 leading-relaxed">
+            <div>
+                <p class="text-sm text-gray-400">Last updated: 12 October 2026</p>
+            </div>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-bold text-brand-navy flex items-center gap-2">
+                    <span class="text-brand-amber font-extrabold">1.</span> Our Commitment
+                </h2>
+                <p>
+                    At Reline-Drains, we believe that web accessibility and clear communication are essential for everyone, including people with visual, hearing, motor, or cognitive impairments. We strive to adhere to the Web Content Accessibility Guidelines (WCAG 2.1 Level AA) standards across all devices and screen sizes.
+                </p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-bold text-brand-navy flex items-center gap-2">
+                    <span class="text-brand-amber font-extrabold">2.</span> Accessibility Features on Our Site
+                </h2>
+                <ul class="list-disc pl-6 space-y-2 text-gray-600">
+                    <li><strong>Contrast & Clarity:</strong> High-contrast typography featuring our navy, amber, and crisp white color palette designed for legibility.</li>
+                    <li><strong>Responsive Layout:</strong> Fully fluid responsive design that supports magnification and zoom up to 200% without loss of content structure.</li>
+                    <li><strong>Semantic HTML:</strong> Logical heading structures (H1, H2, H3), landmarks, and descriptive button labels for screen reader compatibility.</li>
+                    <li><strong>Direct Communication Options:</strong> Direct one-tap click-to-call links (`tel:07474141343`), written contact forms, email access, and visual proof videos to accommodate diverse customer communication preferences.</li>
+                </ul>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-bold text-brand-navy flex items-center gap-2">
+                    <span class="text-brand-amber font-extrabold">3.</span> Ongoing Improvements
+                </h2>
+                <p>
+                    We continually review our site code and content to identify accessibility barriers and enhance user friendliness for all visitors.
+                </p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-bold text-brand-navy flex items-center gap-2">
+                    <span class="text-brand-amber font-extrabold">4.</span> Feedback & Accessibility Assistance
+                </h2>
+                <p>
+                    If you experience difficulty accessing any part of our website or need assistance requesting emergency drainage or repair services in an alternative format, please let us know:
+                </p>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 space-y-2">
+                    <p class="font-bold text-brand-navy">Reline-Drains Limited</p>
+                    <p class="text-sm">Rochdale, Greater Manchester, United Kingdom</p>
+                    <p class="text-sm"><strong>Phone / Text:</strong> <a href="tel:07474141343" class="text-brand-amber font-bold">0747 414 1343</a></p>
+                    <p class="text-sm"><strong>Email:</strong> <a href="mailto:dave.kersh1234@gmail.com" class="text-brand-amber font-semibold">dave.kersh1234@gmail.com</a></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pre-Footer FAQ Prompt Bar -->
+    <div class="bg-white py-10 px-4 border-t border-gray-100 text-center">
+        <p class="text-base text-gray-500 font-medium">Can't find the answer you're looking for?</p>
+        <p class="text-base text-gray-700 font-medium mt-1">
+            Contact our team at <a href="tel:07474141343" class="text-brand-amber hover:text-brand-amberHover font-bold transition-colors">0747 414 1343</a> or <a href="mailto:dave.kersh1234@gmail.com" class="text-brand-amber hover:text-brand-amberHover font-semibold transition-colors">dave.kersh1234@gmail.com</a>
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy text-gray-300 pt-16 pb-36 sm:pb-16 border-t border-brand-slate">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12 border-b border-brand-slate/60">
+                <!-- Col 1: Brand -->
+                <div class="space-y-4">
+                    <a href="/index.html#home" class="inline-flex items-center gap-2">
+                        <div class="bg-brand-blue p-2 rounded-lg">
+                            <i data-lucide="droplet" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <span class="text-2xl font-bold tracking-tight text-white">Reline-Drains</span>
+                    </a>
+                    <p class="text-sm text-gray-400 leading-relaxed max-w-xs">
+                        Specialist drain unblocking, CCTV surveys, and trenchless relining across Rochdale & Greater Manchester.
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://www.instagram.com/reline_drains?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-brand-amber hover:text-brand-amberHover text-sm font-semibold transition-colors" aria-label="Follow Reline-Drains on Instagram">
+                            <svg class="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                            <span>@reline_drains</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4 tracking-wide">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="/index.html#home" class="text-gray-400 hover:text-brand-amber transition-colors">Home</a></li>
+                        <li><a href="/index.html#about" class="text-gray-400 hover:text-brand-amber transition-colors">About Us</a></li>
+                        <li><a href="/index.html#services" class="text-gray-400 hover:text-brand-amber transition-colors">Services</a></li>
+                        <li><a href="/index.html#gallery" class="text-gray-400 hover:text-brand-amber transition-colors">Gallery</a></li>
+                        <li><a href="/index.html#reviews" class="text-gray-400 hover:text-brand-amber transition-colors">Reviews</a></li>
+                        <li><a href="/index.html#faq" class="text-gray-400 hover:text-brand-amber transition-colors">FAQ</a></li>
+                        <li><a href="/index.html#contact" class="text-gray-400 hover:text-brand-amber transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Details -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4 tracking-wide">Contact</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>
+                            <a href="tel:07474141343" class="inline-flex items-center gap-3 text-gray-400 hover:text-brand-amber transition-colors">
+                                <i data-lucide="phone" class="w-4 h-4 text-brand-amber shrink-0"></i>
+                                <span>0747 414 1343</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:dave.kersh1234@gmail.com" class="inline-flex items-center gap-3 text-gray-400 hover:text-brand-amber transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4 text-brand-amber shrink-0"></i>
+                                <span>dave.kersh1234@gmail.com</span>
+                            </a>
+                        </li>
+                        <li class="inline-flex items-start gap-3 text-gray-400">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-brand-amber shrink-0 mt-1"></i>
+                            <span>Rochdale & Greater Manchester, United Kingdom</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Hours -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4 tracking-wide">Hours</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex justify-between gap-4">
+                            <span>Monday–Friday:</span>
+                            <span class="text-white font-medium">08:00 – 17:00</span>
+                        </li>
+                        <li class="flex justify-between gap-4">
+                            <span>Saturday:</span>
+                            <span class="text-white font-medium">By Appointment</span>
+                        </li>
+                        <li class="flex justify-between gap-4">
+                            <span>Sunday:</span>
+                            <span class="text-gray-500">Closed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Sub-Footer Bar -->
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+                <div class="space-y-1 text-center md:text-left">
+                    <p>&copy; 2026 Reline-Drains Limited. All rights reserved.</p>
+                    <p class="text-gray-400">Last Updated: 12 October 2026</p>
+                </div>
+
+                <div class="flex items-center flex-wrap justify-center gap-6">
+                    <a href="/privacy-policy.html" class="hover:text-brand-amber transition-colors">Privacy Policy</a>
+                    <a href="/terms-of-service.html" class="hover:text-brand-amber transition-colors">Terms of Service</a>
+                    <a href="/accessibility.html" class="text-brand-amber font-semibold transition-colors">Accessibility</a>
+                    
+                    <a href="/index.html#contact" class="hidden sm:inline-flex items-center gap-2 bg-brand-slate hover:bg-brand-slate/80 text-white font-semibold py-2 px-4 rounded-xl border border-brand-slate/80 transition-all hover:border-brand-amber/40">
+                        <i data-lucide="calendar" class="w-4 h-4 text-brand-amber"></i>
+                        <span>Book Service</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="sm:hidden fixed bottom-0 left-0 w-full bg-brand-navy border-t border-brand-slate p-4 z-50 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+        <div class="flex items-center justify-center mb-3">
+             <span class="relative flex h-2.5 w-2.5 mr-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+            </span>
+            <span class="text-xs text-gray-300 font-medium tracking-wide">Drain Engineer on standby locally</span>
+        </div>
+        <a href="tel:07474141343" class="flex items-center justify-center gap-3 w-full bg-brand-amber hover:bg-brand-amberHover text-brand-navy font-extrabold py-4 px-4 rounded-xl transition-colors shadow-xl pulse-amber text-xl">
+            <i data-lucide="phone-call" class="w-6 h-6"></i>
+            Call 0747 414 1343
+        </a>
+    </div>
+
+    <!-- Initialize Icons and Scripts -->
+    <script>
+        lucide.createIcons();
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('max-h-0')) {
+                menu.classList.remove('max-h-0');
+                menu.classList.add('max-h-[30rem]'); 
+            } else {
+                menu.classList.remove('max-h-[30rem]');
+                menu.classList.add('max-h-0');
+            }
+        }
+    </script>
+</body>
+</html>
