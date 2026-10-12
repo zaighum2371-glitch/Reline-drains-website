@@ -49,6 +49,7 @@
                     <a href="#home" class="hover:text-brand-amber transition-colors">Home</a>
                     <a href="#about" class="hover:text-brand-amber transition-colors">About</a>
                     <a href="#services" class="hover:text-brand-amber transition-colors">Services</a>
+                    <a href="#gallery" class="hover:text-brand-amber transition-colors">Gallery</a>
                     <a href="#reviews" class="hover:text-brand-amber transition-colors">Reviews</a>
                     <a href="#faq" class="hover:text-brand-amber transition-colors">FAQ</a>
                     <a href="#contact" class="hover:text-brand-amber transition-colors">Contact</a>
@@ -80,6 +81,7 @@
                 <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Home</a>
                 <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">About Us</a>
                 <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Services</a>
+                <a href="#gallery" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Gallery</a>
                 <a href="#reviews" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Reviews</a>
                 <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">FAQ</a>
                 <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-brand-navy transition-colors" onclick="toggleMobileMenu()">Contact</a>
@@ -252,6 +254,103 @@
                         <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0 mt-0.5"></i> Confined space certified deep manhole entry</li>
                         <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0 mt-0.5"></i> Foul water & surface/land drainage solutions</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Gallery Section (Interactive Before & After Slider) -->
+    <section id="gallery" class="py-20 px-4 bg-gray-50 border-b border-gray-200/80">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12 space-y-4">
+                <div class="inline-flex items-center gap-2 bg-brand-blue/10 text-brand-blue px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i> Real Work Transformations
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">Drainage Restoration Gallery</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Drag the slider to see how our engineers restored a completely fractured, silted brick chamber with smooth channel work and precision benching.
+                </p>
+            </div>
+
+            <!-- Comparison Card Wrapper -->
+            <div class="bg-white rounded-3xl p-4 sm:p-8 shadow-xl border border-gray-200/80 max-w-4xl mx-auto">
+                <!-- Interactive Comparison Slider Container -->
+                <div id="drain-comparison-slider" class="comparison-slider-container relative w-full aspect-[3/4] sm:aspect-[4/5] md:aspect-[1/1] max-h-[580px] rounded-2xl overflow-hidden shadow-inner bg-slate-900 border border-gray-200">
+                    
+                    <!-- Underneath Image: AFTER (Aligned) -->
+                    <div class="absolute inset-0 w-full h-full overflow-hidden">
+                        <img 
+                            src="/images/drain-after.jpg" 
+                            alt="Drain restoration completed chamber benching and smooth relined flow channel"
+                            class="w-full h-full object-cover select-none pointer-events-none"
+                            style="object-position: center 52%; transform: scale(1.08) translateY(1%);"
+                            draggable="false"
+                        />
+                        <span class="absolute bottom-4 right-4 bg-emerald-600/90 text-white backdrop-blur-sm text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 z-10 pointer-events-none">
+                            <i data-lucide="check-circle-2" class="w-4 h-4"></i> AFTER: Restored & Sealed
+                        </span>
+                    </div>
+
+                    <!-- Top Clipped Image: BEFORE (Aligned) -->
+                    <div id="slider-before-clipper" class="absolute inset-0 w-full h-full overflow-hidden" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+                        <img 
+                            src="/images/drain-before.jpg" 
+                            alt="Damaged silted drainage chamber before unblocking and relining repairs"
+                            class="w-full h-full object-cover select-none pointer-events-none"
+                            style="object-position: center 48%; transform: scale(1.0) translateY(-1%);"
+                            draggable="false"
+                        />
+                        <span class="absolute bottom-4 left-4 bg-brand-navy/90 text-white backdrop-blur-sm text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 z-10 pointer-events-none">
+                            <i data-lucide="alert-triangle" class="w-4 h-4 text-brand-amber"></i> BEFORE: Broken & Blocked
+                        </span>
+                    </div>
+
+                    <!-- Divider Line & Handle -->
+                    <div id="slider-handle-line" class="absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] z-20 pointer-events-none" style="left: 50%;">
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 sm:w-12 sm:h-12 bg-white rounded-full shadow-2xl flex items-center justify-center border-2 border-brand-amber text-brand-navy">
+                            <i data-lucide="chevrons-left-right" class="w-6 h-6 stroke-[2.5]"></i>
+                        </div>
+                    </div>
+
+                    <!-- Accessible Range Input Overlaid for Keyboard and Drag -->
+                    <input 
+                        type="range" 
+                        min="0" 
+                        max="100" 
+                        value="50" 
+                        id="slider-range-input" 
+                        aria-label="Drain before and after comparison slider"
+                        class="comparison-slider-range" 
+                    />
+                </div>
+
+                <!-- Guidance & Feature Pills -->
+                <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-600">
+                    <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-gray-500">
+                        <i data-lucide="move-horizontal" class="w-4 h-4 text-brand-amber"></i>
+                        <span>Slide or drag horizontally to inspect the structural repair</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <button type="button" onclick="setSliderPercent(0)" class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors">Show After</button>
+                        <button type="button" onclick="setSliderPercent(50)" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-brand-navy text-white hover:bg-brand-slate transition-colors">Split View</button>
+                        <button type="button" onclick="setSliderPercent(100)" class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors">Show Before</button>
+                    </div>
+                </div>
+
+                <!-- Case Study Details Grid -->
+                <div class="mt-8 pt-6 border-t border-gray-100 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
+                    <div class="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                        <p class="text-xs font-bold uppercase tracking-wider text-gray-400">Project Type</p>
+                        <p class="font-extrabold text-brand-navy mt-1">Inspection Chamber Re-Benching</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                        <p class="text-xs font-bold uppercase tracking-wider text-gray-400">Diagnosis</p>
+                        <p class="font-extrabold text-brand-navy mt-1">Cracked Pipework & Silt Buildup</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                        <p class="text-xs font-bold uppercase tracking-wider text-gray-400">Solution</p>
+                        <p class="font-extrabold text-emerald-700 mt-1">Smooth Mortar Bench & New Invert</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -811,6 +910,31 @@
                 answer.classList.add('max-h-0');
                 icon.classList.remove('rotate-180');
             }
+        }
+
+        // Before & After Comparison Slider Logic
+        const sliderRange = document.getElementById('slider-range-input');
+        const sliderClipper = document.getElementById('slider-before-clipper');
+        const sliderHandleLine = document.getElementById('slider-handle-line');
+
+        function updateSlider(percent) {
+            if (!sliderClipper || !sliderHandleLine) return;
+            const clamped = Math.max(0, Math.min(100, percent));
+            sliderClipper.style.clipPath = `polygon(0 0, ${clamped}% 0, ${clamped}% 100%, 0 100%)`;
+            sliderHandleLine.style.left = `${clamped}%`;
+            if (sliderRange && sliderRange.value != clamped) {
+                sliderRange.value = clamped;
+            }
+        }
+
+        function setSliderPercent(percent) {
+            updateSlider(percent);
+        }
+
+        if (sliderRange) {
+            sliderRange.addEventListener('input', function (e) {
+                updateSlider(e.target.value);
+            });
         }
     </script>
 </body>
