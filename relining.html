@@ -122,7 +122,7 @@
           "@id": "https://reline-drains.com/relining.html#video-cctv-relining",
           "name": "Underground Drain Relining: Before & After CCTV Inspection",
           "description": "WinCan robotic crawler CCTV inspection showing a broken clay drainage pipe restored using no-dig CIPP structural resin lining.",
-          "thumbnailUrl": "https://reline-drains.com/images/drain-pipe-repair.jpg",
+          "thumbnailUrl": "https://reline-drains.com/images/before-thumbnail.png",
           "uploadDate": "2026-10-13T08:00:00+01:00",
           "duration": "PT14S",
           "contentUrl": "https://reline-drains.com/videos/before-reline.mp4",
@@ -340,17 +340,22 @@
                     Watch actual WinCan robotic camera inspections demonstrating how a cracked underground clay drain was fully restored using trenchless CIPP resin lining.
                 </p>
 
-                <!-- Synchronized Video Controls -->
-                <div class="pt-2 flex flex-wrap items-center justify-center gap-3">
-                    <button type="button" id="btn-play-both-relining" onclick="playBothVideos()" class="inline-flex items-center gap-2 bg-brand-amber hover:bg-brand-amberHover text-brand-navy font-bold text-xs sm:text-sm px-4 py-2 rounded-xl transition-all shadow-lg cursor-pointer">
-                        <i data-lucide="play" class="w-4 h-4 fill-current"></i> Play Both Live
-                    </button>
-                    <button type="button" id="btn-pause-both-relining" onclick="pauseBothVideos()" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium text-xs sm:text-sm px-4 py-2 rounded-xl border border-white/20 transition-all cursor-pointer">
-                        <i data-lucide="pause" class="w-4 h-4"></i> Pause Both
-                    </button>
-                    <button type="button" id="btn-restart-both-relining" onclick="restartBothVideos()" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium text-xs sm:text-sm px-4 py-2 rounded-xl border border-white/20 transition-all cursor-pointer">
-                        <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Restart
-                    </button>
+                <!-- Synchronized Video Controls & Forensic Speed Badge -->
+                <div class="pt-2 flex flex-col items-center gap-3">
+                    <div class="inline-flex items-center gap-2 bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 px-4 py-1.5 rounded-full text-xs font-semibold">
+                        <i data-lucide="clock" class="w-4 h-4 text-emerald-400"></i> Turnaround: Under 3 Hours (Diagnosed 09:32 AM • Fully Relined 12:21 PM • 11-JUN-2025)
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center gap-3">
+                        <button type="button" id="btn-play-both-relining" onclick="playBothVideos()" class="inline-flex items-center gap-2 bg-brand-amber hover:bg-brand-amberHover text-brand-navy font-bold text-xs sm:text-sm px-4 py-2 rounded-xl transition-all shadow-lg cursor-pointer">
+                            <i data-lucide="play" class="w-4 h-4 fill-current"></i> Play Both Live
+                        </button>
+                        <button type="button" id="btn-pause-both-relining" onclick="pauseBothVideos()" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium text-xs sm:text-sm px-4 py-2 rounded-xl border border-white/20 transition-all cursor-pointer">
+                            <i data-lucide="pause" class="w-4 h-4"></i> Pause Both
+                        </button>
+                        <button type="button" id="btn-restart-both-relining" onclick="restartBothVideos()" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium text-xs sm:text-sm px-4 py-2 rounded-xl border border-white/20 transition-all cursor-pointer">
+                            <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Restart
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -363,7 +368,7 @@
                         <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-700/60">
                             <span class="inline-flex items-center gap-2 bg-red-500/20 text-red-400 border border-red-500/40 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                                 <span class="h-2 w-2 rounded-full bg-red-500 animate-pulse"></span>
-                                BEFORE RELINE
+                                BEFORE RELINE (09:32 AM)
                             </span>
                             <span class="text-[11px] font-mono text-gray-400 uppercase tracking-widest flex items-center gap-1.5">
                                 <i data-lucide="camera" class="w-3.5 h-3.5 text-red-400"></i> FEED #01: INITIAL DIAGNOSTIC
@@ -371,10 +376,11 @@
                         </div>
 
                         <!-- Video Container -->
-                        <div class="relative rounded-xl overflow-hidden bg-black aspect-[4/3] border border-slate-700 shadow-inner group">
+                        <div class="relative rounded-xl overflow-hidden bg-black aspect-[5/4] border border-slate-700 shadow-inner group flex items-center justify-center">
                             <video 
                                 id="video-before" 
-                                class="w-full h-full object-cover" 
+                                class="w-full h-full object-contain" 
+                                poster="/images/before-thumbnail.png"
                                 controls 
                                 playsinline 
                                 preload="metadata" 
@@ -413,7 +419,7 @@
                         <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-700/60">
                             <span class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                                 <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
-                                AFTER NO-DIG RELINE
+                                AFTER NO-DIG RELINE (12:21 PM)
                             </span>
                             <span class="text-[11px] font-mono text-gray-400 uppercase tracking-widest flex items-center gap-1.5">
                                 <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400"></i> FEED #02: VERIFIED REPAIR
@@ -421,10 +427,11 @@
                         </div>
 
                         <!-- Video Container -->
-                        <div class="relative rounded-xl overflow-hidden bg-black aspect-[4/3] border border-slate-700 shadow-inner group">
+                        <div class="relative rounded-xl overflow-hidden bg-black aspect-[5/4] border border-slate-700 shadow-inner group flex items-center justify-center">
                             <video 
                                 id="video-after" 
-                                class="w-full h-full object-cover" 
+                                class="w-full h-full object-contain" 
+                                poster="/images/after-thumbnail.png"
                                 controls 
                                 playsinline 
                                 preload="metadata" 
