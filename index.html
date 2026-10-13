@@ -158,6 +158,20 @@
               }
             }
           ]
+        },
+        {
+          "@type": "VideoObject",
+          "@id": "https://reline-drains.com/#video-cctv-relining",
+          "name": "Underground Drain Relining: Before & After CCTV Inspection",
+          "description": "Genuine WinCan robotic crawler CCTV footage showing a fractured underground clay drain pipe before and after trenchless CIPP resin relining by Reline-Drains Ltd in Greater Manchester.",
+          "thumbnailUrl": "https://reline-drains.com/images/drain-pipe-repair.jpg",
+          "uploadDate": "2026-10-13T08:00:00+01:00",
+          "duration": "PT14S",
+          "contentUrl": "https://reline-drains.com/videos/before-reline.mp4",
+          "embedUrl": "https://reline-drains.com/videos/after-reline.mp4",
+          "publisher": {
+            "@id": "https://reline-drains.com/#business"
+          }
         }
       ]
     }
@@ -548,6 +562,160 @@
                         <p class="font-extrabold text-emerald-700 mt-1">New Clay Channel Fitted</p>
                         <p class="text-xs text-gray-500 mt-1">Smooth, self-cleansing invert channel with waterproof mortar benching.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Video Proof: Trenchless Pipe Relining (Before & After CCTV) -->
+    <section id="video-proof" class="py-20 px-4 bg-slate-900 text-white relative overflow-hidden">
+        <!-- Subtle background glow -->
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-amber/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-12 space-y-4">
+                <div class="inline-flex items-center gap-2 bg-brand-amber/20 border border-brand-amber/40 text-brand-amber px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider">
+                    <i data-lucide="video" class="w-4 h-4"></i> Real CCTV Camera Footage
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+                    Underground Pipe Relining: <span class="text-brand-amber">Before &amp; After</span>
+                </h2>
+                <p class="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    Watch genuine WinCan robotic crawler camera inspections proving how we repair cracked, root-damaged sewer pipes without digging up driveways or lawns.
+                </p>
+
+                <!-- Synchronized Video Controls -->
+                <div class="pt-2 flex flex-wrap items-center justify-center gap-3">
+                    <button type="button" id="btn-play-both" onclick="playBothVideos()" class="inline-flex items-center gap-2 bg-brand-amber hover:bg-brand-amberHover text-brand-navy font-bold text-xs sm:text-sm px-4 py-2 rounded-xl transition-all shadow-lg cursor-pointer">
+                        <i data-lucide="play" class="w-4 h-4 fill-current"></i> Play Both Live
+                    </button>
+                    <button type="button" id="btn-pause-both" onclick="pauseBothVideos()" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium text-xs sm:text-sm px-4 py-2 rounded-xl border border-white/20 transition-all cursor-pointer">
+                        <i data-lucide="pause" class="w-4 h-4"></i> Pause Both
+                    </button>
+                    <button type="button" id="btn-restart-both" onclick="restartBothVideos()" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium text-xs sm:text-sm px-4 py-2 rounded-xl border border-white/20 transition-all cursor-pointer">
+                        <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Restart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dual Video Comparison Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                <!-- Video 1: BEFORE -->
+                <div class="bg-slate-800/90 border border-red-500/30 rounded-2xl p-4 sm:p-6 shadow-2xl flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <!-- Header Bar -->
+                        <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-700/60">
+                            <span class="inline-flex items-center gap-2 bg-red-500/20 text-red-400 border border-red-500/40 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                                <span class="h-2 w-2 rounded-full bg-red-500 animate-pulse"></span>
+                                BEFORE RELINE
+                            </span>
+                            <span class="text-[11px] font-mono text-gray-400 uppercase tracking-widest flex items-center gap-1.5">
+                                <i data-lucide="camera" class="w-3.5 h-3.5 text-red-400"></i> FEED #01: DIAGNOSTIC SCAN
+                            </span>
+                        </div>
+
+                        <!-- Video Container -->
+                        <div class="relative rounded-xl overflow-hidden bg-black aspect-[4/3] border border-slate-700 shadow-inner group">
+                            <video 
+                                id="video-before" 
+                                class="w-full h-full object-cover" 
+                                controls 
+                                playsinline 
+                                preload="metadata" 
+                                loop
+                            >
+                                <source src="/videos/before-reline.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                            <div class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded text-[10px] font-mono text-red-400 border border-red-500/30 pointer-events-none">
+                                DEFECT: CRACKING &amp; DISPLACEMENT
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diagnostics Specs Card -->
+                    <div class="mt-5 pt-4 border-t border-slate-700/60 space-y-2.5 text-xs text-gray-300">
+                        <div class="flex items-start gap-2.5">
+                            <i data-lucide="alert-octagon" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
+                            <div>
+                                <strong class="text-white">Identified Defect:</strong> Severe cracks and displaced joints allowing groundwater infiltration and repeat clogs.
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i data-lucide="alert-triangle" class="w-4 h-4 text-brand-amber shrink-0 mt-0.5"></i>
+                            <div>
+                                <strong class="text-white">Old Way to Fix:</strong> Destructive excavation through block paving or gardens costing thousands in reinstatement.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2: AFTER -->
+                <div class="bg-slate-800/90 border border-emerald-500/30 rounded-2xl p-4 sm:p-6 shadow-2xl flex flex-col justify-between backdrop-blur-sm">
+                    <div>
+                        <!-- Header Bar -->
+                        <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-700/60">
+                            <span class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                                <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+                                AFTER NO-DIG RELINE
+                            </span>
+                            <span class="text-[11px] font-mono text-gray-400 uppercase tracking-widest flex items-center gap-1.5">
+                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400"></i> FEED #02: POST-REPAIR PASS
+                            </span>
+                        </div>
+
+                        <!-- Video Container -->
+                        <div class="relative rounded-xl overflow-hidden bg-black aspect-[4/3] border border-slate-700 shadow-inner group">
+                            <video 
+                                id="video-after" 
+                                class="w-full h-full object-cover" 
+                                controls 
+                                playsinline 
+                                preload="metadata" 
+                                loop
+                            >
+                                <source src="/videos/after-reline.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                            <div class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded text-[10px] font-mono text-emerald-400 border border-emerald-500/30 pointer-events-none">
+                                RESTORED: SEAMLESS CIPP LINER
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Restoration Specs Card -->
+                    <div class="mt-5 pt-4 border-t border-slate-700/60 space-y-2.5 text-xs text-gray-300">
+                        <div class="flex items-start gap-2.5">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                            <div>
+                                <strong class="text-white">Applied Solution:</strong> Inverted CIPP epoxy structural liner cured inside the host pipe to form a seamless pipe-within-a-pipe.
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-brand-amber shrink-0 mt-0.5"></i>
+                            <div>
+                                <strong class="text-white">Customer Benefit:</strong> 50+ year structural design life, 100% root-proof, zero dig work, completed in a single afternoon.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom CTA Banner -->
+            <div class="mt-12 bg-gradient-to-r from-brand-navy via-slate-800 to-brand-navy border border-brand-amber/30 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+                <div class="space-y-1 text-center md:text-left">
+                    <h3 class="text-xl sm:text-2xl font-bold text-white">Have Broken Underground Pipes or Root Ingress?</h3>
+                    <p class="text-sm text-gray-300">Don't dig up your driveway. Get a fast CCTV inspection and transparent fixed quote for trenchless relining.</p>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-3 shrink-0">
+                    <a href="tel:07474141343" class="inline-flex items-center gap-2 bg-brand-amber hover:bg-brand-amberHover text-brand-navy font-extrabold px-6 py-3 rounded-xl transition-all shadow-lg text-sm sm:text-base">
+                        <i data-lucide="phone-call" class="w-4 h-4"></i> Call Dave: 0747 414 1343
+                    </a>
+                    <a href="/relining.html" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-5 py-3 rounded-xl border border-white/20 transition-all text-sm">
+                        Relining Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1366,6 +1534,28 @@
             sliderRange.addEventListener('input', function (e) {
                 updateSlider(e.target.value);
             });
+        }
+
+        // Synchronized Dual CCTV Video Controls
+        function playBothVideos() {
+            const v1 = document.getElementById('video-before');
+            const v2 = document.getElementById('video-after');
+            if (v1) v1.play().catch(() => {});
+            if (v2) v2.play().catch(() => {});
+        }
+
+        function pauseBothVideos() {
+            const v1 = document.getElementById('video-before');
+            const v2 = document.getElementById('video-after');
+            if (v1) v1.pause();
+            if (v2) v2.pause();
+        }
+
+        function restartBothVideos() {
+            const v1 = document.getElementById('video-before');
+            const v2 = document.getElementById('video-after');
+            if (v1) { v1.currentTime = 0; v1.play().catch(() => {}); }
+            if (v2) { v2.currentTime = 0; v2.play().catch(() => {}); }
         }
     </script>
 </body>
