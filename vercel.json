@@ -57,18 +57,5 @@
         }
       ]
     }
-  ],
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.reline-drains.com"
-        }
-      ],
-      "destination": "https://reline-drains.com/:path*",
-      "permanent": true
-    }
   ]
 }
